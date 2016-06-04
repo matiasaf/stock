@@ -1,0 +1,85 @@
+body {
+  padding-top: 50px;
+}
+
+.bloque {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.centrado{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+/*****************************Detalle.html*****************************/
+
+.inputs{
+	padding: 15px 0;
+}
+
+.vender{
+	margin-top: 50%;
+}
+
+.edit{
+	float: right;
+	margin: 20px 20px;
+}
+
+.btn-vender{
+  float: right;
+}
+
+/****************************Stock.html********************************/
+
+.panel-stock{
+	margin-top: 50px;
+}
+
+#table1>thead{
+cursor: pointer;
+}
+
+.filtro{
+	margin-top: 15px;
+}
+
+td, th{
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  
+  #myModal .modal-dialog  {width:95%;}
+
+}
+/****************************Agregar.html********************************/
+
+.agregar{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+select {
+    overflow-y: auto;
+}
+h3{
+  text-align: center;
+}
+.fila_btn{
+  margin-top: 50px;
+}
+
+.form-control{
+  padding: 0;
+
+}
+
+.col-xs-1{
+  padding-left: 5px;
+  padding-right: 0px;
+}
