@@ -34,6 +34,8 @@
     @include('includes.header')
 
     @include('partials.flash')
+  
+    @include('errors.lista')
 
 
     @yield('content')

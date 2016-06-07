@@ -14,116 +14,35 @@ class ArticulosTableSeeder extends Seeder
     public function run()
     {
 
-            \DB::table('tipo_articulos')->insert(array(
-
-                'tipo' => 'Remera',
-                'persona_dirigida'=> 'Hombres',
-                'marca' => 'taverniti',
-                'talle' => 'xl',
-                'precio' => 134,
-
-                'tela' => 'Algodon',
-                'estampa' => 'Lisa',
-                'friza' => 'No',
-                'capucha' => 'No'
-
-                ));
-
-
-    		\DB::table('articulos')->insert(array(
-
-    			'codigo' => '1234512',
-    			
-
-    			));
-
-            $tipo_articulo = Articulo::where('')
-            
-        \DB::table('articulos')->insert(array(
-
-                'codigo' => '1234512',
-                
-
-                ));
-
-            \DB::table('tipo_articulos')->insert(array(
-
-                'tipo' => 'Remera',
-                'persona_dirigida'=> 'Hombres',
-                'marca' => 'taverniti',
-                'talle' => 'xl',
-                'precio' => 134,
-
-                'tela' => 'Algodon',
-                'estampa' => 'Lisa',
-                'friza' => 'No',
-                'capucha' => 'No'
-
-                ));
-
-\DB::table('articulos')->insert(array(
-
-                'codigo' => '12ffff512',
-                
-
-                ));
-
-            \DB::table('tipo_articulos')->insert(array(
-
-                'tipo' => 'Remera',
-                'persona_dirigida'=> 'Hombres',
-                'marca' => 'narrow',
-                'talle' => 'xl',
-                'precio' => 245,
-
-                'tela' => 'Algodon',
-                'estampa' => 'Lisa',
-                'friza' => 'No',
-                'capucha' => 'No'
-
-                ));
-
             \DB::table('articulos')->insert(array(
 
-                'codigo' => '1234512',
-                
-
-                ));
-
-            \DB::table('tipo_articulos')->insert(array(
-
-                'tipo' => 'Short',
-                'persona_dirigida'=> 'Hombres',
-                'marca' => 'taverniti',
+                'codigo' => '123456',
+                'tipo_articulo' => 'Bermuda',
+                'categoria'=> 'Hombre',
+                'marca' => 'Taverniti',
                 'talle' => 'xl',
-                'precio' => 145,
+                'color' => 'Verde',
 
+                'precio' => 125.2,
                 'tela' => 'Algodon',
-                'estampa' => 'Lisa',
+                'motivo' => 'Lisa',
                 'friza' => 'No',
                 'capucha' => 'No'
 
                 ));
 
+             \DB::table('articulos')->insert(array(
 
-
-\DB::table('articulos')->insert(array(
-
-                'codigo' => '6565656565',
-                
-
-                ));
-
-            \DB::table('tipo_articulos')->insert(array(
-
-                'tipo' => 'Remera manga larga',
-                'persona_dirigida'=> 'Mujeres',
-                'marca' => 'Dolce gabbana',
+                'codigo' => '123ffff6',
+                'tipo_articulo' => 'Bermuda',
+                'categoria'=> 'Hombre',
+                'marca' => 'Narrow',
                 'talle' => 'xl',
-                'precio' => 1200,
+                'color' => 'Verde',
 
+                'precio' => 225.2,
                 'tela' => 'Algodon',
-                'estampa' => 'Rayada',
+                'motivo' => 'Lisa',
                 'friza' => 'No',
                 'capucha' => 'No'
 

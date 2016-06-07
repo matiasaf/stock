@@ -11,7 +11,22 @@
             <div class="panel-heading">
               Articulos en Stock
             </div>
+              
+
+            <form action="{{ route('editar_precio')}}" method="post" id="form-edit">
+            
+            <input type="text" name="precio_edit" id="precio_edit" ><button class="btn btn-success">Editar precio</button>
+            
+            <input type="checkbox" name="marcarTodo" id="marcarTodo" />
+            <input type="hidden" name="lista_id" id="lista_id" >
+
+            <input type="hidden" name="_token" value="{{Session::token() }}">
+            
+          </form>
+
+
               <!-- Table -->
+
               <table id="table1" class="table tablesorter">
                 <thead>
                   <tr>
@@ -83,16 +98,7 @@
   </form>
 
 
-  <form action="{{ route('editar_precio')}}" method="post" id="form-edit">
-    
-    <input type="text" name="precio_edit" id="precio_edit" ><button class="btn btn-success">Editar precio</button>
-    
-    <input type="checkbox" name="marcarTodo" id="marcarTodo" />
-    <input type="hidden" name="lista_id" id="lista_id" >
 
-    <input type="hidden" name="_token" value="{{Session::token() }}">
-    
-  </form>
 
 
 @endsection
@@ -113,17 +119,23 @@
 
     			$(document).ready( function() {
 
-            $("#marcarTodo").change(function () {
-                if($(this).is(':checked')){
-
-                  $(".micheckbox").prop('checked', true);
-
+          $("#marcarTodo").change(function () {
+                if($(this).is(':checked') ){
+                  //Recorro todas las filas de la tabla
+                  $('#table1 tbody tr').each(function (i) {
+                    //Si la fila esta visible, busco el check de la fila y lo seteo.
+                    if ($(this).is(":visible")){
+                      //Prueba para mostrar por consola que anda bien
+                      
+                     $(this).find("input[type=checkbox]").prop("checked", true);
+                    }
+                  });
                 } else {
-
-                  $(".micheckbox").prop('checked', false);
-   
+                  $(".micheckbox").prop('checked', false); 
                 }
               });
+
+
 
 
     				$('.btn-delete').click(function(e) {

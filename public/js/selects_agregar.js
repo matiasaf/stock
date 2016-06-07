@@ -21,7 +21,7 @@ var makeModel = new DynamicOptionList("CAT","ART","TELA");
       makeModel.forValue("Niños").forValue("Buzo").addOptions("Algodon","Micropolar","Acetato");
       makeModel.forValue("Niños").forValue("Campera").addOptions("Algodon","Micropolar","Acetato","Rompeviento");
       makeModel.forValue("Niños").forValue("Short").addOptions("Algodon","Acetato","Jean");
-      makeModel.forValue("Niños").forValue("Jogging").addOptions("Algodon","Acetato");
+      makeModel.forValue("Niños").forValue("Jogging").addOptions("Algodon","Acetato");codigo
       makeModel.forValue("Niños").forValue("Jean TAlto/Chupin").addOptions("Jean");
       makeModel.forValue("Niños").forValue("Jean TAlto/Recto").addOptions("Jean");
       makeModel.forValue("Niños").forValue("Jean TMedio/Chupin").addOptions("Jean");

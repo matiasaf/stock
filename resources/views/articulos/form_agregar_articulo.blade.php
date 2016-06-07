@@ -1,6 +1,5 @@
 @extends('layouts.app')
 
-@include('errors.lista')
 
 @section('content')
 
@@ -156,9 +155,13 @@
   </div>      
 
 
-<script >
-  window.onload = initDynamicOptionLists;
-</script>
+  
 
+
+  <script  type="text/javascript" src="js/select_dependientes.js"></script>
+
+
+  <script type="text/javascript" src="js/selects_agregar.js"></script>
+ 
 @stop
 

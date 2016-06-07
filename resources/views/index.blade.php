@@ -1,6 +1,5 @@
 @extends('layouts.app')
 
-@include('errors.lista')
 
 
 @section('content')

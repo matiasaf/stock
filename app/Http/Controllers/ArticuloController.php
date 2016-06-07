@@ -94,7 +94,9 @@ class ArticuloController extends Controller
 
         
 
-      	return redirect()->route('index');
+      	return redirect()->route('index')->with([
+          'mensaje_flash' => '¡Articulo agregado con éxito!'
+          ]);
 
 	}
 

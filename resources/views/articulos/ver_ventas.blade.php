@@ -24,7 +24,8 @@
               
               @foreach($venta_articulo_log as $articulo_vendido)
               <tr>
-                <td>{{$articulo_vendido->created_at}}</td>
+                <td>{{$articulo_vendido->created_at->format('d/m/Y')}}</td>
+                       
                 <td>{{$articulo_vendido->tipo_articulo}}</td>
                 <td>{{$articulo_vendido->precio}}</td>
                 <td>{{$articulo_vendido->forma_pago}}</td>
